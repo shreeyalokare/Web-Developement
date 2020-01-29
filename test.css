@@ -1,0 +1,190 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+label {
+padding-left: 20px;
+line-height: 50px;
+font-size: 1.6rem;
+color: white;
+cursor: pointer;
+display: block;
+background-color: black;
+}
+#toggleNav {
+display: none;
+}
+.Nav ul {
+display: none;
+}
+
+
+#toggleNav:checked ~ ul {
+display: block;
+}
+
+
+
+.header
+{
+  color: white;
+  background-color: white;
+  min-height:8rem;
+  background-image: url("logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+
+.nav
+{
+  font-size: 1rem;
+  background-color: blue;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.nav li
+{
+  list-style: none;
+  text-align: center;
+  width:50%;
+}
+
+.nav a
+{
+  text-decoration: none;
+  color:white;
+}
+
+.nav a:hover
+{
+  background-color: royalblue;
+}
+
+.nav ul
+{
+
+}
+
+
+.footer
+{
+
+
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1rem;
+  text-align: center;
+
+
+}
+
+  .footer li{
+    list-style: none;
+  }
+  .footer ul
+  {
+    display: flex;
+
+  }
+
+.footer a
+{
+
+  text-decoration: none;
+  color:white;
+}
+
+.footer a:hover
+{
+  background-color: royalblue;
+  color:white;
+}
+
+
+.bgimage
+{
+  background-image: url("bcg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 50rem;
+}
+
+
+/*Style for laptop*/
+
+@media(min-width:760px)
+{
+
+
+label
+{
+  display: none;
+}
+
+  .nav
+  {
+
+    font-size: 2rem;
+    background-color: black;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .nav li
+  {
+    list-style: none;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .nav a
+  {
+    text-decoration: none;
+    color:white;
+  }
+
+.nav ul
+{
+
+  display:block;
+  display: flex;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 2rem;
+  text-align: center;
+
+}
+
+
+  .footer
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer li{
+    list-style: none;
+  }
+  .footer ul
+  {
+
+
+  }
+
+
+
+}

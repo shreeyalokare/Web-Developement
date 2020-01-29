@@ -1,0 +1,366 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+
+.navMob{
+
+  min-height: 100px;
+  position:relative;
+  top:100px;
+
+}
+.navMob ul
+
+{
+    background-color: black;
+    opacity: 0.8;
+    width: 75%;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+    font-size: 2rem;
+
+}
+
+.navMob li{
+    padding: 10px;
+}
+
+.navMob a
+{
+  text-decoration: none;
+  color:white;
+}
+
+
+
+.Nav
+{
+  display:none;
+}
+
+label {
+padding-left: 20px;
+line-height: 50px;
+font-size: 1.6rem;
+color: white;
+cursor: pointer;
+display: block;
+background-color: black;
+
+}
+
+#toggleNav {
+display: none;
+}
+
+.navMob ul {
+display:none;
+
+}
+
+#toggleNav:checked ~ ul {
+display: block;
+}
+
+.toggleLook {
+height: 100px;
+width:720px;
+padding: 10px;
+background-color: #2F3437;
+position: fixed;
+
+top: 0;
+left: 0;
+z-index: 10;
+
+background-image: url("../Images/logo2.png");
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+
+
+.text{
+  margin-left: 18rem;
+  text-decoration: overline underline;
+  color: black;
+}
+.content
+{
+  display: grid;
+  grid-template-columns: 1fr;
+ background-color: white;
+
+  min-height:200rem;
+  color:white;
+  text-align: center;
+    text-shadow: 2px 2px black;
+      font-family: "Leelawadee UI";
+    font-size: 2rem;
+    vertical-align: text-bottom;
+}
+.content a{
+  color: white;
+  text-decoration: none;
+}
+.content a:hover{
+  color: darkblue;
+}
+
+.link1
+{
+  background-color: white;
+  display: none;
+}
+.link2
+{
+
+  background-image: url("../Images/Gallery/1.jpg");
+  background-size: cover;
+  margin: 1rem;
+  border-radius: 50%;
+}
+.link3
+{
+  background-image: url("../Images/Gallery/2.png");
+  background-size: cover;
+  margin: 1rem;
+    border-radius: 50%;
+}
+.link4
+{
+  background-image: url("../Images/Gallery/3.jpg");
+  background-size: cover;
+  margin: 1rem;
+    border-radius: 50%;
+
+}
+.link5
+{
+  background-color: white;
+  display: none;
+
+}
+.link6
+{
+  background-color: white;
+  display: none;
+
+
+}
+.link7
+{
+  background-image: url("../Images/Gallery/4.jpg");
+  background-size: cover;
+  margin: 1rem;
+    border-radius: 50%;
+
+
+}
+.link8
+{
+  background-image: url("../Images/Gallery/5.jpg");
+  background-size: cover;
+  margin: 1rem;
+    border-radius: 50%;
+
+
+}
+.link9
+{
+  background-image: url("../Images/Gallery/6.jpg");
+  background-size: cover;
+  margin: 1rem;
+  border-radius: 50%;
+
+}
+.link10
+{
+  background-color: white;
+  display: none;
+
+}
+
+
+@media (min-width:760px)
+{
+
+  .Nav
+  {
+    display: flex;
+  }
+
+.navMob
+{
+  display: none;
+}
+
+
+.header
+{
+  opacity: 0.8;
+  min-height:8rem;
+  background-image: url("../Images/logo2.png");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color:orange;
+  text-align: center;
+  background-color: lightgray;
+  width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+
+label{
+  display: none;
+}
+
+#toggleNav
+{
+  display: none;
+}
+
+.Nav
+{
+  background-color: black;
+  padding: 1rem;
+  height: 4.5rem;
+  justify-content: center;
+  flex-direction: row;
+
+  width: 100%;
+    position: fixed;
+    top:140px;
+    bottom: auto;
+    opacity: 0.8;
+
+
+}
+
+.Nav li
+{
+  list-style: none;
+  font-size: 2rem;
+  padding-right: 10;
+  padding-left: 10;
+  font-family: fantasy , "Lucida", Helvetica, sans-serif;
+
+}
+
+
+.Nav ul
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.Nav a
+{
+  text-decoration: none;
+  color:white;
+  padding: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+
+
+}
+
+.Nav a:hover
+{
+  background-color: royalblue;
+
+}
+
+
+.content
+{
+  min-height: 50rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-area: "link1 link2 link3 link4 link5"
+             "link6 link7 link8 link9 link10";
+
+}
+
+.link10
+{
+  background-color: white;
+  display: grid;
+
+}
+.link5
+{
+  background-color: white;
+  display: grid;
+
+}
+.link6
+{
+  background-color: white;
+  display: grid;
+
+
+}
+
+.link1
+{
+  background-color: white;
+  display: grid;
+
+
+}
+
+
+.footer
+{
+  background-color: black;
+  height: 4rem;
+
+}
+
+.footer li
+{
+  list-style: none;
+  padding:20;
+  padding-right:100;
+  padding-left: 100;
+  background-color: black;
+
+}
+
+.footer ul
+{
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  background-color: black;
+  font-size: 1.5rem;
+  padding:1rem;
+
+
+}
+
+.footer a
+{
+  text-decoration: none;
+  text-align: center;
+  color:white;
+  padding: 1rem;
+  padding-right:30;
+  padding-left: 30;
+
+}
+
+.footer a:hover
+{
+  background-color: royalblue;
+}
+}
